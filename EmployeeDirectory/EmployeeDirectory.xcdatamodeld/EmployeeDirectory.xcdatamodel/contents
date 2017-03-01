@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11224.2" systemVersion="15G31" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="15F34" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Employee" representedClassName="EmployeeDirectory.Employee" syncable="YES">
         <attribute name="about" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="active" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
@@ -14,6 +14,7 @@
         <attribute name="vacationDays" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
         <relationship name="sales" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Sale" inverseName="employee" inverseEntity="Sale" syncable="YES"/>
     </entity>
+    <entity name="EmployeePicture" representedClassName="EmployeeDerictory.EmployeePicture" syncable="YES" codeGenerationType="class"/>
     <entity name="Sale" representedClassName="EmployeeDirectory.Sale" syncable="YES">
         <attribute name="amount" optional="YES" attributeType="Integer 16" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
@@ -22,5 +23,6 @@
     <elements>
         <element name="Employee" positionX="-63" positionY="-18" width="128" height="223"/>
         <element name="Sale" positionX="-263" positionY="101" width="128" height="88"/>
+        <element name="EmployeePicture" positionX="-162" positionY="117" width="128" height="52"/>
     </elements>
 </model>
