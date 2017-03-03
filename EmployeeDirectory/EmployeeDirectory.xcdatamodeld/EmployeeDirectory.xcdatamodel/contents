@@ -12,6 +12,7 @@
         <attribute name="pictureThumbnail" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="startDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="vacationDays" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="picture" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="EmployeePicture" syncable="YES"/>
         <relationship name="sales" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Sale" inverseName="employee" inverseEntity="Sale" syncable="YES"/>
     </entity>
     <entity name="EmployeePicture" representedClassName="EmployeeDerictory.EmployeePicture" syncable="YES" codeGenerationType="class">
@@ -23,7 +24,7 @@
         <relationship name="employee" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Employee" inverseName="sales" inverseEntity="Employee" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Employee" positionX="18" positionY="63" width="128" height="316"/>
+        <element name="Employee" positionX="18" positionY="63" width="128" height="338"/>
         <element name="EmployeePicture" positionX="-387" positionY="153" width="180" height="88"/>
         <element name="Sale" positionX="-623" positionY="372" width="128" height="132"/>
     </elements>
