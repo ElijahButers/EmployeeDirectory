@@ -6,8 +6,10 @@
 //  Copyright © 2017 Razeware. All rights reserved.
 //
 
-import UIKit
+import Foundation
+import CoreData
 
 class EmployeePicture: NSManagedObject {
-
+  @NSManaged var picture: Data
+  @NSManaged var employee: EmployeeDirectory.Employee
 }
