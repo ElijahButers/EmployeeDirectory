@@ -132,7 +132,7 @@ extension EmployeeListViewController {
     cell.departmentLabel.text = employee.department
     cell.emailLabel.text = employee.email
     cell.phoneNumberLabel.text = employee.phone
-    cell.pictureImageView.image = UIImage(data: employee.picture)
+    cell.pictureImageView.image = UIImage(data: employee.pictureThumbnail)
 
     return cell
   }
